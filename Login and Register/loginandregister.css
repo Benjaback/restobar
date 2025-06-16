@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/fondo\ huellita\ con\ colores\ del\ logo.png);
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: "PT Serif", serif;
+}
+.contenedor{ /*contenedor de los formularios y cambio al otro formulario*/
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative; 
+    overflow: hidden; 
+    width: 760px;
+    max-width: 100%;
+    min-height: 480px;
+    margin: 20px;
+}
+.contenedor p{ /*texto de contenedor de color*/
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.contenedor a{ /*contenedor de pregunta no recuerdas su contrase;a*/
+    color: #03084b;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.pregunta a{ /*color de pregunta no recuerdas su contrase;a*/
+    color: cornflowerblue;
+}
+.contenedor h2{ /*todos los titulos en el contenedores*/
+    color: #070e72;
+}
+.cambiar-contenedor h2{ /*titulos de los contenedores de color*/
+    color: #fff;
+}
+.contenedor button{ /*boton inicio sesion y registrarse de los form*/
+    background-color: rgb(174, 65, 228);
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contenedor button.hidden{ /*boton panel inicio sesion y registrarse de los form, letra color blanco, no cambia de color*/
+    background-color: transparent;
+    border-color: #fff;
+}
+.contenedor form{ /*contenedor para cada form*/
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.contenedor-input{ /*inputs de los form*/
+    background-color: #eee;
+    border: none;
+    outline: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+}
+.contenedor-input input{ /*input de los form*/
+    background-color: inherit;
+    border: none;
+    width: 90%;
+}
+.form-contenedor{  /*contenedor de los form*/
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-in{ /*contenedor de los form posicion*/
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.contenedor.active .sign-in{ /*contenedor de los form cambiar de posicion*/
+    transform: translateX(100%);
+}
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.contenedor.active .sign-up{ /*contenedor de los form cambiar de posicion*/
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+.icons{ /*iconos de redes para ingresar usuario/correo*/
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.icons a{ /*iconos de redes para ingresar usuario/correo*/
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.cambiar-contenedor{ /*contenedores de colores movibles*/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+.contenedor.active .cambiar-contenedor{ /*contenedores de colores forma al mover*/
+    transform: translateX(-100%);
+    border-radius: 0 100px 100px 0;
+}
+.cambiar{ /*contenedor de color cambiar*/
+    height: 100%;
+    background: linear-gradient(to right, #6908aa, #e0106a);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.contenedor.active .cambiar{ /*mover contenedores de colores*/
+    transform: translateX(50%);
+}
+.cambiar-panel{ /*contenedores de colores, parte interna*/
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.cambiar-left{ /*contenedores de colores, parte interna mover izquierda*/
+    transform: translateX(-200%);
+}
+.contenedor.active .cambiar-left{ /*contenedores de colores, parte interna mover*/
+    transform: translateX(0);
+}
+.cambiar-right{ /*contenedores de colores, parte interna mover derecha*/
+    right: 0;
+    transform: translateX(0);
+}
+.contenedor.active .cambiar-right{ /*contenedores de colores, parte interna mover*/
+    transform: translateX(200%);
+}
+
+
+
+@media screen and (max-width: 670px) { /*ya esta en horizontal*/
+    .contenedor{
+        width: 100%;
+        max-width: 100%;
+        min-height: 95%;
+        margin: 20px;
+        display: flex;
+    }
+    .contenedor-input{
+        padding: 3px;
+    }
+}/* falta el vertical*/
+
+@media screen and (max-width: 650px){
+    .contenedor{
+        width: 100%;
+        max-width: 100%;
+        min-height: 95%;
+        margin: 20px;
+        display: flex;
+        border-radius: 30px;
+    }
+    .contenedor-input{
+        padding: 10px;
+    }
+    .form-contenedor.sign-in{ /*ubicacion del form login abajo*/
+        height: 70%;
+        width: 100%;
+        top: 30%;
+    }
+    .form-contenedor.sign-up{ /*ubicacion del form register arriba*/
+        height: 70%;
+        width: 100%;
+        translate: -100%;
+    }
+    .cambiar-contenedor{ /*contenedor de colores*/
+        height: 30%;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0 50px 50px; 
+    }
+    .cambiar-panel.cambiar-right{
+        top: 0;
+    }
+    .cambiar-panel.cambiar-left{
+        opacity: 1;
+    }
+    .contenedor.active .cambiar-contenedor{
+        left: 0;
+        right: 0;
+        top: 61%;
+        transform: translateY(30%);
+        border-radius: 50px 50px 0 0;
+    }
+
+    /*.form-contenedor.sign-in form{ /*para intentar agrandar el form de inicio de sesion
+        border: 2px redsolid;
+        
+        
+    }*/
+}
