@@ -1,0 +1,18 @@
+letras:
+#070e72
+degrade claro:
+linear-gradient(to left, #b151f2, #f05f9e)
+degrade colores logo:
+linear-gradient(to left, #840dd4, #f51e7b)
+color boton:
+slateblue
+un tipo de blanco:
+#eeeeeeff
+otro tipo blanco:
+#eee
+otro blanco:
+#fffffff7
+color boton mas claro:
+ rgb(174, 65, 228)
+color fondo:
+gold
