@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="inicio.css">
+    
+</head>
+<body>
+    <!--Productos-->
+    <div class="container my-4">
+        <h1 class="text-center mb-4 titulo-productos">Todos los productos</h1>
+    
+        <div class="row g-2 mb-4 filtros-productos">
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control search-i" placeholder="Buscar...">
+            </div>
+            <div class="col-12 col-md-6">
+                <select class="form-select select-oreder">
+                    <option>precio más alto</option>
+                    <option>precio más bajo</option>
+                </select>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-center productos-grid">
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+                <a href="#" class="porduct-box card text-decoration-none text-dark h-100">
+                    <img src="img/procutos/prudcto1.png" class="card-img-top img-fluid mx-auto producto-img" alt="Oreo">
+                    <div class="card-body">
+                        <div class="card-title">Bolsa de oreo</div>
+                        <div class="price fw-bold">500$</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+                <a href="#" class="porduct-box card text-decoration-none text-dark h-100">
+                    <img src="img/procutos/producto3.png" class="card-img-top img-fluid mx-auto producto-img" alt="Oreo">
+                    <div class="card-body">
+                        <div class="offer">OFERTA</div>
+                        <div class="card-title">galleta oreo</div>
+                        <div class="price fw-bold"><del class="text-muted">450$</del> 400$</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+                <a href="#" class="porduct-box card text-decoration-none text-dark h-100">
+                    <img src="img/procutos/producto2.png" class="card-img-top img-fluid mx-auto producto-img" alt="Oreo">
+                    <div class="card-body">
+                        <div class="card-title">galleta de mani edision liomitada</div>
+                        <div class="price fw-bold">1500$</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="pagination justify-content-center mt-4 paginacion">
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">10</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
