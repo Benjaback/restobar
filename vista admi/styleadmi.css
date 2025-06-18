@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    font-family: "PT Serif", serif;
+}
+
+.navbar-nav a{
+    color: #4f564b;
+}
+.section .padding{
+    padding: 70px 0;
+}
+
+
+.navbar .nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar .dark .navbar .brand{
+    color:#161815;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar .light .navbar-brand:focus .navbar-light .navbar-brand:hover{
+    color: rgb(99, 9, 9);
+}
+
+.navbar .toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.services .card .body i {
+    font-size: 50px;
+}
+
+.team .card.body i{
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+.navbar-nav{
+    text-align: center;
+}
+
+.w-100 {
+    height: 70vh;
+}
+ize: 17px;
+}
+.about-text {
+    padding-top: 50px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+.section .padding{
+    padding: 50px 0;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.logo img:hover{
+    transform: scale(1.2);
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    color: #070e72;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+.section-header p {
+    color: #010101;
+    font-size: 24px;
+    font-weight: bold;
+}
