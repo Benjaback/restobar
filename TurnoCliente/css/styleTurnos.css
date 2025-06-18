@@ -1,0 +1,315 @@
+
+body {
+  background-color: #eeeeeeff!important;
+  padding-top: 70px;
+
+}
+
+.custom-navbar {
+  background-color: #FFD700 !important; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+
+}
+
+
+.custom-navbar .nav-link {
+  color: #212529 !important; 
+  font-weight: 500;
+}
+
+
+.custom-navbar .nav-link:hover {
+  color: #000 !important;
+}
+
+
+.custom-navbar .navbar-brand {
+  color: #212529 !important;
+  font-weight: 600;
+}
+
+
+/*nav {
+  height: 80px;
+  background: #0a174b;
+  position: sticky;
+  top: 0; 
+  z-index: 999; 
+  color: #fffdfd;
+
+}*/
+
+/* botonsito */
+.btn-custom {
+  background-color: #6806a9 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-custom:hover {
+  background-color: #840dd4!important;
+}
+.botonsito {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.caja {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+.caja1, .caja2 {
+  width: 50%; 
+  
+  
+}
+
+
+.formulario {
+  background-image: url(/TurnoCliente/ingTurnos/perry5.png) ;
+  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 500px;
+  color: #000000;
+ 
+}
+.formulario {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.formulario.oculto {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+.calendario {
+  background-color: #fffdfd;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  min-height: 500px;
+  height: auto;
+  overflow: visible;
+}
+
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .formulario {
+    margin-top: 40px;
+  }
+  .fc .fc-daygrid-day-frame {
+    padding: 2px;
+  }
+
+}
+
+
+/* modifica calendario */
+
+#calendar {
+  max-width: 100%;
+  margin-top: 10px;
+  background-image: url(/TurnoCliente/ingTurnos/calenPerruno.png);
+  border-radius: 10px; 
+  padding: 15px;
+  color: rgb(11, 4, 18);
+  
+   width: 100%;
+  height: auto;
+  min-height: 400px; 
+  overflow: visible;
+}
+
+
+
+.fila-fecha-hora {
+  display: flex;
+  gap: 10px;
+}
+
+.fila-fecha-hora .form-control {
+  flex: 1;
+}
+
+/* numros */
+.fc-daygrid-day-number {
+  color: #114476; 
+  font-weight: bold;
+}
+/* dias */
+.fc-col-header-cell-cushion {
+  color: #070e72; 
+  font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+  /* tamaño del título */
+  .fc-toolbar-title {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+ 
+
+  /* botones de navegación */
+  .fc-toolbar.fc-header-toolbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .fc-toolbar-chunk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .fc-button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  
+  
+  
+}
+
+.mensaje-flotante {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #840dd4;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10000;
+  text-align: center;
+}
+
+.mensaje-flotante.visible {
+  opacity: 1;
+}
+
+/* Transición */
+.fc-transicion {
+  opacity: 0;
+  transform: translateX(100px); 
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fc-transicion-activa {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-check-input:checked {
+  background-color: #840dd4 !important;
+  border-color: #9051ba !important;
+}
+
+.mensaje-guardado {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #840dd4;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10000;
+  text-align: center;
+}
+
+.mensaje-guardado.visible {
+  opacity: 1;
+}
+
+/* botnoes calendario */
+.fc-button {
+  background-color: #6806a9 !important;  
+  border-color: #6806a9 !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+.fc-button:hover {
+  background-color: #840dd4 !important;
+  border-color: #840dd4 !important;
+}
+
+.fc-button-active {
+  background-color: #840dd4 !important;
+  border-color: #840dd4 !important;
+  color: white !important;
+}
+
+
+/* Cambiar el borde y sombra de registroo */
+select.form-select:focus,
+input.form-control:focus {
+  border-color: #a64ac9 !important;
+  box-shadow: 0 0 0 0.2rem rgba(166, 74, 201, 0.25) !important;
+}
+
+
+select.form-select {
+  background-color: #f7ecff;
+  color: #000000;
+  border: 2px solid #9e9c9e;
+  font-weight: 500;
+}
+
+
+.btn-primary {
+  background-color: #a64ac9;
+  border-color: #9e9c9e;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #932bba;
+  border-color: #9e9c9e;
+}
+
+input.form-control {
+  border: 2px solid #9e9c9e;
+}
+
+
+
+
+
+
+
+
