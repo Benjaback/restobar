@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "PT Serif", serif;
+    background: linear-gradient(to left, #b151f2, #f05f9e 60%, gold 100%);
+    color: #070e72;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: gold;
+    box-shadow: 0 2px 8px #0002;
+}
+.datepicker-inline {
+    min-width: 350px;
+    font-size: 1.3em;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0001;
+    padding: 20px;
+
+}
+#calendario .datepicker-inline {
+            min-width: 340px;
+            font-size: 1.3em;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px #0001;
+            padding: 20px;
+            margin: 0 auto;}
+#calendario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;}
+.logo-img {
+    width: 70px;
+    height: auto;
+    margin-right: 14px;
+    border-radius: 50%;
+    border: 3px solid gold;
+    box-shadow: 0 2px 8px #0002;
+    background: #fff;
+     width: 60px;
+    height: auto;
+    margin-right: 10px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand small {
+    font-size: 0.7em;
+    color: #f51e7b;
+    margin-left: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: #070e72 ;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 2px 0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    background: linear-gradient(to left, #b151f2, #f05f9e);
+    color: #fff ;
+}
+
+.bg-card {
+    background: linear-gradient(to left, #d1a9eb, #ebcdda);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0001;
+    border: none;
+}
+
+.card-title {
+    font-size: 2em;
+    color: #840dd4;
+    margin-bottom: 0.2em;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.card-body > div[style*="font-size:2em"] {
+    margin-bottom: 0.3em;
+}
+
+.card-header {
+    background:  linear-gradient(to left, #d1a9eb, #ebcdda);;
+    border-bottom: 2px solid #b151f2;
+    border-radius: 12px 12px 0 0;
+}
+
+.badge-pendiente {
+    background: #ffc107;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.badge-confirmado {
+    background: #28a745;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.btn-info, .btn-primary, .btn-danger {
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px #0001;
+    transition: transform 0.1s;
+}
+
+.btn-info:hover, .btn-primary:hover, .btn-danger:hover {
+    transform: scale(1.07);
+    opacity: 0.9;
+}
+
+.table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(to left, #b151f2, #f05f9e);
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+}
+
+td {
+    vertical-align: middle;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+    .logo-img {
+        width: 50px;
+    }
+    .card-title {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-body {
+        padding: 1em;
+    }
+    .table {
+        font-size: 0.95em;
+    }
+}
