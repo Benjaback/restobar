@@ -1,0 +1,103 @@
+
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #343a40;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+h2 a {
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+h2 a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+td a{
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+td a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+.conta {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+}
+
+
+.table {
+    margin-bottom: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.table thead th {
+    background: gold;
+    color: #000000;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    text-align: center;
+    color: #343a40;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f3f6f9;
+}
+
+.table td a {
+    color: purple;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.table td a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .conta {
+        padding: 12px 4px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}

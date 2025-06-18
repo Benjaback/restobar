@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="editar.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="form-title mt-5">editar Producto</h1>
+        <div class="form-container">
+            <form action="listar.html" method="get" class="was-validated">
+                <div class="mb-4">
+                    <label for="nombre" class="form-label">Nombre prod:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto" required>
+                </div>
+                <div class="mb-4">
+                    <label for="precio" class="form-label">Precio prod:</label>
+                    <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio" required>
+                </div>
+                <div class="mb-4">
+                    <label for="stock" class="form-label">Stock:</label>
+                    <input type="number" class="form-control" id="stock" placeholder="Ingrese el stock" required>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>
