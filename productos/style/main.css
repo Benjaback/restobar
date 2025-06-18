@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PT Serif", serif;
+
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea{
@@ -72,7 +70,7 @@ aside{
 }
 .boton-menu.active{
     background-color: rgb(255, 255, 255);
-    color: blueviolet;
+    color: #840dd4;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -115,7 +113,7 @@ aside{
     font-size: .85rem;
 }
 main {
-    background-color: white;
+    background-color: #eeeeeeff;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -160,7 +158,7 @@ main {
     transition: background-color .2s, color .2s;
 }
 .producto-agregar:hover{
-    background-color: blueviolet;
+    background-color: rgb(174, 65, 228);
     color: white;
 }
 /**carrito**/
@@ -208,7 +206,7 @@ carrito-productos{
 }
 .carritos-acciones-vaciar{
     border: 0;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(159, 159, 159, 0.804);
     padding: 1,5rem;
     border-radius: 1rem;
     color: blueviolet;
@@ -221,7 +219,7 @@ carrito-productos{
 }
 .carrito-acciones-total{
     display: flex;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(159, 159, 159, 0.804);
     padding: 1,5rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -230,7 +228,7 @@ carrito-productos{
 }
 .carritos-aciones-comprar{
     border: 0;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(159, 159, 159, 0.804);
     padding: 1,5rem;
     color: blueviolet;
     text-transform: uppercase;
@@ -240,6 +238,7 @@ carrito-productos{
 }
 
 .close-menu {
+    
     display: none;
 }
 
@@ -266,7 +265,7 @@ carrito-productos{
     aside {
         position: fixed;
         z-index: 9;
-        background-color: var(--clr-main, gold);
+        background-color: gold;
         left: 0;
         top: 0;
         width: 70vw;
@@ -308,12 +307,12 @@ carrito-productos{
     }
 
     .header-mobile .logo {
-        color: var(--clr-gray);
+        color: #840dd4;
     }
 
     .open-menu, .close-menu {
         background-color: transparent;
-        color: var(--clr-gray);
+        color:  #840dd4;
         border: 0;
         font-size: 2rem;
         cursor: pointer;
@@ -322,7 +321,7 @@ carrito-productos{
     .close-menu {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: .1rem;
         right: 1rem;
     }
 
@@ -352,13 +351,11 @@ carrito-productos{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* Oculta el botón de hamburguesa en escritorio */
+/*boton menu*/
 .open-menu {
     display: none;
 }
 
-/* Muestra el botón de hamburguesa solo en mobile */
 @media screen and (max-width: 600px) {
     .open-menu {
         display: block;
