@@ -83,14 +83,87 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-4">
-            <div class="card-header bg-light">
-                <h3 class="mb-0">Calendario de Turnos</h3>
-            </div>
-            <div id="calendario"></div>
-            <div class="card-body text-center" style="background: linear-gradient(to left, #840dd4, #f51e7b); color: #fff;">
-        
-        </div> 
+        <div class="calendarioo">
+            <h2 class="mb-4">Calendario de Turnos</h2>
+            <div id="calendar"></div>
+          <div class="container py-4">
+    <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-header text-center bg-light">
+        <h4 class="mb-0">Junio 2025</h4>
+      </div>
+      <div class="card-body p-0">
+        <table class="table calendar-table mb-0">
+          <thead>
+            <tr>
+              <th>Lu</th>
+              <th>Ma</th>
+              <th>Mi</th>
+              <th>Ju</th>
+              <th>Vi</th>
+              <th>Sa</th>
+              <th>Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-muted">26</td>
+              <td class="text-muted">27</td>
+              <td class="text-muted">28</td>
+              <td class="text-muted">29</td>
+              <td class="text-muted">30</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td class="today">18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td class="text-muted">1</td>
+              <td class="text-muted">2</td>
+              <td class="text-muted">3</td>
+              <td class="text-muted">4</td>
+              <td class="text-muted">5</td>
+              <td class="text-muted">6</td>
+              <td class="text-muted">7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
          
             
         </div>
@@ -143,16 +216,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-    $(function(){
-      $('#calendario').datepicker({
-        format: 'dd/mm/yyyy',
-        language: 'es',
-        todayHighlight: true,
-        autoclose: false,
-        inline: true
-      }).datepicker('show');
-    });
-    </script>
+    
+    
 </body>
 </html>

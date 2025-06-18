@@ -20,19 +20,22 @@ body {
     padding: 20px;
 
 }
-#calendario .datepicker-inline {
-            min-width: 340px;
-            font-size: 1.3em;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px #0001;
-            padding: 20px;
-            margin: 0 auto;}
-#calendario {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;}
+.calendar-table th, .calendar-table td {
+      width: 14.28%;
+      text-align: center;
+      vertical-align: middle;
+      height: 60px;
+      font-size: 1.1em;
+}
+.calendar-table th {
+      background: linear-gradient(to left, #d1a9eb, #ebcdda);
+      color: #fff;
+    }
+.calendar-table td.today {
+      background: #ffc107;
+      font-weight: bold;
+      border-radius: 50%;
+    }
 .logo-img {
     width: 70px;
     height: auto;
@@ -134,13 +137,13 @@ body {
 
 .table {
     background: #fff;
-    border-radius: 10px;
+    border-radius: 0px;
     overflow: hidden;
 }
 
 th {
-    background: linear-gradient(to left, #b151f2, #f05f9e);
-    color: #fff;
+    background:#b151f2 ;
+    color:#b151f2;
     font-size: 1.1em;
     border: none;
 }
@@ -168,4 +171,11 @@ td {
     .table {
         font-size: 0.95em;
     }
+}
+@media (max-width: 576px) {
+      .calendar-table th, .calendar-table td {
+        height: 36px;
+        font-size: 0.9em;
+        padding: 0;
+      }
 }
