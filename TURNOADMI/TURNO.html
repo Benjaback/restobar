@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+*<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,11 +18,11 @@
 <link rel="stylesheet" href="askd.js">
 </head>
 <body>
-   
+    
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="C:\Users\gasto\OneDrive\Documentos\restobar\restobar\vista admi\img\Copilot_20250601_001307.png" alt="Logo Alma Canina" class="logo-img">
+                <img src="/Imagenes/Logo/logo_de_alma_canina[1].png" alt="Logo Alma Canina" class="logo-img">
                 ALMA CANINA 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">
@@ -30,8 +30,8 @@
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="C:\Users\gasto\OneDrive\Documentos\restobar\restobar\vista admi\vista.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gestión de Turnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/vista admi/vista.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/TURNOADMI/TURNO.html">Gestión de Turnos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Inventario</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
@@ -76,21 +76,94 @@
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card bg-card text-center">
                     <div class="card-body">
-                        <div style="font-size:2em;">✂️</div>
+                        <div style="font-size:2em;">✂</div>
                         <h4 class="card-title">Corte de Pelo</h4>
                         <p class="card-text">Servicio Más Popular</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card mb-4">
-            <div class="card-header bg-light">
-                <h3 class="mb-0">Calendario de Turnos</h3>
-            </div>
-            <div id="calendario"></div>
-            <div class="card-body text-center" style="background: linear-gradient(to left, #840dd4, #f51e7b); color: #fff;">
-        
-        </div> 
+        <div class="calendarioo">
+            <h2 class="mb-4">Calendario de Turnos</h2>
+            <div id="calendar"></div>
+          <div class="container py-4">
+    <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-header text-center bg-light">
+        <h4 class="mb-0">Junio 2025</h4>
+      </div>
+      <div class="card-body p-0">
+        <table class="table calendar-table mb-0">
+          <thead>
+            <tr>
+              <th>Lu</th>
+              <th>Ma</th>
+              <th>Mi</th>
+              <th>Ju</th>
+              <th>Vi</th>
+              <th>Sa</th>
+              <th>Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-muted">26</td>
+              <td class="text-muted">27</td>
+              <td class="text-muted">28</td>
+              <td class="text-muted">29</td>
+              <td class="text-muted">30</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td class="today">18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td class="text-muted">1</td>
+              <td class="text-muted">2</td>
+              <td class="text-muted">3</td>
+              <td class="text-muted">4</td>
+              <td class="text-muted">5</td>
+              <td class="text-muted">6</td>
+              <td class="text-muted">7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
          
             
         </div>
@@ -143,16 +216,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-    $(function(){
-      $('#calendario').datepicker({
-        format: 'dd/mm/yyyy',
-        language: 'es',
-        todayHighlight: true,
-        autoclose: false,
-        inline: true
-      }).datepicker('show');
-    });
-    </script>
+    
+    
 </body>
-</html>
+</html>*
